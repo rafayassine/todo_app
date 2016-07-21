@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="index-header col-md-8 col-md-offset-2">
+      <h1>Today tasks</h1>
+    </div>
+    <div class="index-body col-md-8 col-md-offset-2">
+      <% @tasks.each do |task| %>
+        <h2><%= task.title %></h2>
+        <p><%= task.description %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
