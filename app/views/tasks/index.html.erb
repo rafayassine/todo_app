@@ -5,9 +5,11 @@
     </div>
     <div class="index-body col-md-8 col-md-offset-2">
       <% @tasks.each do |task| %>
-        <h2><%= task.title %></h2>
+        <h2><%= link_to task.title, task %></h2>
         <p><%= task.description %></p>
       <% end %>
+      <br>
+      <%= link_to "Create a new task", new_task_path %>
     </div>
   </div>
 </div>
